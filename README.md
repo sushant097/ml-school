@@ -77,13 +77,10 @@ This session extends the [SageMaker Pipeline](https://docs.aws.amazon.com/sagema
 
 4. Modify the SageMaker Pipeline you created for the "Pipeline of Digits" project and add a step to register the model.
 
-
 ## Session 5
-
 This session extends the [SageMaker Pipeline](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-sdk.html) with a step to deploy the model to an endpoint automatically. We'll use a [Lambda Step](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#step-type-lambda) to create an endpoint and deploy the model. To control the endpoint's inputs and outputs, we'll modify the model's assets to include code that customizes the processing of a request. Finally, we'll use a custom image to deploy our model to get complete flexibility in creating the endpoint. You can see more information about how this works by checking the [SageMaker TensorFlow Serving Container](https://github.com/aws/sagemaker-tensorflow-serving-container) documentation.
 
 ### Assignments
-
 1. The custom inference code we built during the Session accepts JSON requests. Modify the code to receive the input data in CSV or JSON format.
 
 2. Load the test data and run every sample through the endpoint using a Predictor. Check the data the endpoint captured by downloading the files from the S3 location where you stored them.
